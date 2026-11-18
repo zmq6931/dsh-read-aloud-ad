@@ -1,6 +1,6 @@
 # dsh-read-aloud-ad
 
-Read finished DeepSeek Harness replies aloud in **Mandarin Xiaoxiao** (`zh-CN-XiaoxiaoNeural`), with an adjustable playback speed. Package name: `dsh-read-aloud-ad`; plugin row id: `read-aloud-ad`.
+Read finished DeepSeek Harness replies aloud in **Mandarin Xiaoxiao** (`zh-CN-XiaoxiaoNeural`), with an adjustable playback speed.
 
 ## Install
 
@@ -8,7 +8,7 @@ Read finished DeepSeek Harness replies aloud in **Mandarin Xiaoxiao** (`zh-CN-Xi
 dsh plugin add dsh-read-aloud-ad
 ```
 
-Or install the release tarball: download `dsh-read-aloud-ad-0.1.0.tgz` from the [latest release](https://github.com/zmq6931/dsh-read-aloud-ad/releases/latest) and run `dsh plugin add ./dsh-read-aloud-ad-0.1.0.tgz`.
+Or install the release tarball: download the `.tgz` attached to the [latest release](https://github.com/zmq6931/dsh-read-aloud-ad/releases/latest) and run `dsh plugin add ./dsh-read-aloud-ad-<version>.tgz`.
 
 Then enable **Read replies aloud** in **Plugins**.
 
@@ -56,7 +56,7 @@ Disable the bundle in **Plugins**. The buttons and the `/read-aloud` route disap
 
 ## 中文说明
 
-安装:`dsh plugin add dsh-read-aloud-ad`(或下载 release 里的 `dsh-read-aloud-ad-0.1.0.tgz`,执行 `dsh plugin add ./dsh-read-aloud-ad-0.1.0.tgz`),然后在 **Plugins** 里启用「朗读回复」。
+安装:`dsh plugin add dsh-read-aloud-ad`(或下载 latest release 里附带的 `.tgz`,执行 `dsh plugin add ./dsh-read-aloud-ad-<version>.tgz`),然后在 **Plugins** 里启用「朗读回复」。
 
 在每条已结束回复的操作栏（复制、点赞、点踩那一行）里加入朗读按钮和语速按钮，使用普通话晓晓朗读。
 
@@ -66,7 +66,5 @@ Disable the bundle in **Plugins**. The buttons and the `/read-aloud` route disap
 - 文字只发给本机插件路由，再由它调用微软 Edge 的朗读服务；不需要 API Key，不新增模型请求，也不写入会话记录。
 - 语音合成结果只缓存在内存中，重启后需要重新合成。
 - 如果微软调整了朗读服务，合成可能失败并显示提示，再点一次会重试。
-
-包名：`dsh-read-aloud-ad`；插件行 id：`read-aloud-ad`；目录：`C:\Andy\deepseek_HARNESS\dsh-read-aloud-ad`。
 
 License: MIT.

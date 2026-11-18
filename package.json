@@ -1,6 +1,6 @@
-{
+﻿{
   "name": "dsh-read-aloud-ad",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Read assistant replies aloud in Mandarin Xiaoxiao with adjustable playback speed, from a play button in the reply's action row.",
   "license": "MIT",
   "type": "module",

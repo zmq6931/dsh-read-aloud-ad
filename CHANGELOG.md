@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.1 — 2026-11-18
+
+Docs-only release.
+
+- The README no longer carries a machine-specific local path or the internal plugin row id.
+- The release-tarball install line is now version-agnostic.
+
 ## 0.1.0 — 2026-11-18
 
 Initial public release.
