@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Read replies aloud",
+    "description": "Adds a play button and a speed menu to every finished reply's action row, voicing the reply with the Mandarin Xiaoxiao (zh-CN-XiaoxiaoNeural) voice. Speed runs from 0.75x to 3x in 0.25x steps, and a change applies immediately. Text is sent from the browser to this plugin's own loopback route, which calls Microsoft Edge's read-aloud speech service over the internet; no API key is needed, no model request is added, and nothing is written to the session log. Turn the plugin off to remove the buttons and the route."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "dsh-read-aloud-ad",
+  "version": "0.1.0",
+  "description": "Read assistant replies aloud in Mandarin Xiaoxiao with adjustable playback speed, from a play button in the reply's action row.",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "tts",
+    "text-to-speech",
+    "read-aloud",
+    "xiaoxiao",
+    "晓晓",
+    "语音播放"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmq6931/dsh-read-aloud-ad.git"
+  },
+  "homepage": "https://github.com/zmq6931/dsh-read-aloud-ad#readme",
+  "bugs": {
+    "url": "https://github.com/zmq6931/dsh-read-aloud-ad/issues"
+  },
+  "author": "zmq6931",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "manifestVersion": "1",
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+# dsh-read-aloud-ad profile patch layer.
+# Host half: mounts the /read-aloud HTTP routes (Edge TTS bridge).
+# Browser half: registered by dsh-client-modules through the package's
+# dsh.client declaration.
+- insert:
+    - id: read-aloud-ad
+      name: 'dsh-read-aloud-ad'
