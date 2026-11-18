@@ -4,11 +4,11 @@ Read finished DeepSeek Harness replies aloud in **Mandarin Xiaoxiao** (`zh-CN-Xi
 
 ## Install
 
-Download `dsh-read-aloud-ad-0.1.0.tgz` from the [latest release](https://github.com/zmq6931/dsh-read-aloud-ad/releases/latest), then:
-
 ```sh
-dsh plugin add ./dsh-read-aloud-ad-0.1.0.tgz
+dsh plugin add dsh-read-aloud-ad
 ```
+
+Or install the release tarball: download `dsh-read-aloud-ad-0.1.0.tgz` from the [latest release](https://github.com/zmq6931/dsh-read-aloud-ad/releases/latest) and run `dsh plugin add ./dsh-read-aloud-ad-0.1.0.tgz`.
 
 Then enable **Read replies aloud** in **Plugins**.
 
@@ -56,7 +56,7 @@ Disable the bundle in **Plugins**. The buttons and the `/read-aloud` route disap
 
 ## 中文说明
 
-安装:下载 release 里的 `dsh-read-aloud-ad-0.1.0.tgz`,执行 `dsh plugin add ./dsh-read-aloud-ad-0.1.0.tgz`,然后在 **Plugins** 里启用「朗读回复」。
+安装:`dsh plugin add dsh-read-aloud-ad`(或下载 release 里的 `dsh-read-aloud-ad-0.1.0.tgz`,执行 `dsh plugin add ./dsh-read-aloud-ad-0.1.0.tgz`),然后在 **Plugins** 里启用「朗读回复」。
 
 在每条已结束回复的操作栏（复制、点赞、点踩那一行）里加入朗读按钮和语速按钮，使用普通话晓晓朗读。
 
