@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.2 — 2026-11-19
+
+Packaging fix; no functional change.
+
+- `package.json` is written as UTF-8 **without** a BOM again. The 0.1.1 tarball carried a byte-order mark, which made strict readers reject the manifest (`Unexpected token '﻿'`), so DSH denied the plugin at profile startup.
+- 0.1.1 is deprecated on npm; use 0.1.2.
+
 ## 0.1.1 — 2026-11-18
 
 Docs-only release.
